@@ -9,11 +9,8 @@ using Zenject;
 
 public class BootStrap : MonoBehaviour
 {
-
-
-
     [Inject]
-    private void Construct(IPlayerPrefsService[] servicesLoadSavePlayerPrefs)
+    private void Construct(IServicePlayerPrefs[] servicesLoadSavePlayerPrefs)
     {
         foreach (var item in servicesLoadSavePlayerPrefs)
         {
